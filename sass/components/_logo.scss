@@ -1,0 +1,33 @@
+.logo {
+  color: var(--accent-color);
+  font-size: 26px;
+  font-family: var(--secondary-font);
+}
+
+.logo-st {
+  color: var(--nav-txt-cl);
+  font-size: 26px;
+}
+
+.footer>.logo-st {
+    color: var(--white-color);
+}
+
+.studio {
+  font-size: 26px;
+}
+
+.footer-studio {
+  color: var(--white-color);
+}
+
+.link.logo-st {
+    margin-right: 93px;
+}
+
+.send-icon {
+    position: absolute;
+    box-sizing: border-box;
+    right: 24px;
+    top: 13px;
+}

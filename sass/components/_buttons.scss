@@ -1,0 +1,136 @@
+.portfolio__buttons>.list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.portfolio__buttons-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.hero__btn {
+    display: block;
+    font: inherit;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white-color);
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
+    height: 50px;
+    align-items: flex-start;
+    border: none;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+            background: var(--btn-hover);
+            transition: var(--anim);
+        }
+}
+
+.portfolio__btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--nav-txt-cl);
+    font-family: inherit;
+    border: none;
+    padding: 6px 22px;
+    border-radius: 4px;
+&:hover {
+        background-color: var(--accent-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        color: var(--white-color);
+        transition: var(--anim);
+    }
+}
+
+.button.current {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.subs-btn {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    font: inherit;
+    text-align: center;
+    align-items: flex-start;
+    border: none;
+    color: var(--white-color);
+    fill: var(--white-color);
+    background: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: 12px;
+&:hover,
+&:focus {
+        background: #188ce8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        cursor: pointer;
+        transition: var(--anim)
+    }
+}
+
+.modal__close-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 18px;
+    right: 18px;
+    margin-top: 6px;
+    margin-right: 6px;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+    background-color: var(--white-color);
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.submit-btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    padding: 10px 55px;
+    background-color: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    margin-top: 30px;
+&:hover,
+&:focus {
+        background: #188ce8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        transition: var(--anim);
+    }
+}
+
+.sent-btn {
+    font-weight: bold;
+}
+
+.modal__close-btn:hover,
+.btn-close:hover {
+    fill: var(--accent-color);
+}

@@ -1,0 +1,43 @@
+.contacts {
+    margin-left: auto;
+}
+
+.link-cnt {
+    color: var(--often-color);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        transition: var(--anim);
+    }
+}
+
+.link-cnt:hover svg {
+    fill: var(--accent-color);
+    transition: var(--anim);
+}
+.contacts-footer {
+    margin-top: 24px;
+    
+}
+
+.contacts-footer-item {
+    color: var(--white-color);
+}
+
+.contacts-footer-item:not(last-child) {
+    margin-bottom: 9px;
+}
+
+.header-contact-item:hover,
+.header-contact-item:focus,
+.contacts-footer-item:hover,
+.contacts-footer-item:focus {
+    color: var(--accent-color);
+    transition: var(--anim);
+}
+
+
+
+
+

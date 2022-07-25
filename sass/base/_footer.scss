@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--hero-color);
+  padding: 60px 0px;
+  &-left {
+    display: flex;
+    flex-direction: column;
+  }
+  &-main-list {
+    display: flex;
+  }
+  &-container {
+    display: block;
+  }
+}

@@ -1,0 +1,42 @@
+.about {
+  padding-top: 94px;
+  &__name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--nav-txt-cl);
+  }
+  &__txt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--often-color);
+    margin-bottom: 10px;
+  }
+  &__list {
+    align-items: center;
+  }
+  &__container-list {
+    display: flex;
+    margin: -15px;
+  }
+  &__items {
+    width: calc(100% / 4 - 30px);
+    margin: 15px;
+    justify-content: center;
+    width: 270;
+}
+&__svg {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--icon-bgc);
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+}
+
