@@ -1,13 +1,21 @@
 .follow {
-    display: flex;
-    flex-direction: column;
-    margin-left: 70px;
+    // display: flex;
+    // flex-direction: column;
+    // margin-left: 70px;
+margin-bottom: 60px;
+
 &-footer-list {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        margin: auto;
         width: 206px;
         margin-top: 20px;
     }
+
+&-footer-item:not(:last-child) {
+ margin-right: 10px;
+}
+
 &-name {
     text-transform: uppercase;
     color: var(--white-color);

@@ -1,5 +1,17 @@
 .about {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+
   &__name {
     font-weight: 700;
     font-size: 14px;
@@ -7,29 +19,36 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--nav-txt-cl);
+    text-align: center;
+    margin-bottom: 10px;
   }
   &__txt {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--often-color);
     margin-bottom: 10px;
   }
   &__list {
     align-items: center;
+
+  @media screen and (min-width: 480px) {
+    display: block;
+}
+
   }
   &__container-list {
-    display: flex;
+    // display: flex;
     margin: -15px;
   }
   &__items {
-    width: calc(100% / 4 - 30px);
+    // width: calc(100% / 4 - 30px);
     margin: 15px;
     justify-content: center;
     width: 270;
-}
-&__svg {
+  }
+  &__svg {
     display: flex;
     height: 120px;
     justify-content: center;
@@ -37,6 +56,5 @@
     background-color: var(--icon-bgc);
     margin-bottom: 30px;
     border-radius: 4px;
+  }
 }
-}
-

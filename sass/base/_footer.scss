@@ -1,16 +1,25 @@
 .footer {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   background-color: var(--hero-color);
   padding: 60px 0px;
+  margin: auto;
   &-left {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    display: block;
+    justify-content: center;
   }
-  &-main-list {
-    display: flex;
+
+  &-right-side {
+    margin-top: 60px;
   }
+
+  // &-main-list {
+  //   display: flex;
+  // }
+
   &-container {
     display: block;
+    text-align: center;
   }
 }

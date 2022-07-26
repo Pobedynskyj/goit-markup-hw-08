@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Web Studio</title>
     <!-- normalize -->
     <link
       rel="stylesheet"
@@ -29,8 +29,6 @@
     <!-- Header start-->
     <header class="header">
       <div class="container header-container">
-        <!-- Logo -->
-        <!-- Navi Buttons -->
         <nav class="header-nav">
           <a class="link logo-st header-link-logo" href="./index.html"
             ><span class="logo">Web</span><span class="studio">Studio</span></a
@@ -50,8 +48,30 @@
               <a class="header-link link" href="#">Контакты</a>
             </li>
           </ul>
+          <button
+            type="button"
+            class="menu-button is-open"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="переключатель моб меню">
+              <use
+                class="menu-open"
+                href="./images/svg/symbol-defs.svg#icon-burger"
+              ></use>
+              <use
+                class="menu-close"
+                href="./images/svg/symbol-defs.svg#icon-close-menu"
+              ></use>
+            </svg>
+          </button>
+          <div
+            class="menu-container container is-open"
+            id="menu-container"
+            data-menu
+          ></div>
         </nav>
-        <!-- Contacts -->
         <div class="contacts">
           <ul class="header-list-contact list">
             <li class="header-contact-item">
@@ -77,7 +97,6 @@
     <!-- Header end -->
     <!-- Main stat -->
     <main class="main">
-      <!-- Hero -->
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero__name">
@@ -232,7 +251,7 @@
         </div>
       </section>
       <!-- What we do -->
-      <section class="doing">
+      <!-- <section class="doing">
         <div class="container">
           <h2 class="doing__title">Чем мы занимаемся</h2>
           <ul class="doing__list list doing-container container-team">
@@ -274,7 +293,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Our command -->
       <section class="command">
         <div class="container command__container">
@@ -612,7 +631,7 @@
               <p class="sub-name">Подпишитесь на рассылку</p>
               <form class="js-speaker-form footer-form">
                 <ul class="list sub-list">
-                  <li>
+                  <li class="sub-item">
                     <label for="mail-sub"></label>
                     <input
                       type="email"
@@ -622,7 +641,7 @@
                       class="sub-input"
                     />
                   </li>
-                  <li>
+                  <li class="sub-item-btn">
                     <button type="submit" class="subs-btn">
                       <span class="subscribe">Подписаться</span>
                       <svg class="send-icon" width="24" height="24">
@@ -639,6 +658,7 @@
     </footer>
     <!-- js-script -->
     <script src="./js/modal.js"></script>
+    <script src="./js/open-menu.js"></script>
     <script>
       () => {
         document

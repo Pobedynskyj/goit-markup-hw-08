@@ -1,9 +1,9 @@
 .command {
-  padding: 94px 0px;
+  padding: 60px 0px;
   background-color: #f5f4fa;
   &__title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
@@ -11,9 +11,7 @@
     align-items: center;
     margin-bottom: 50px;
   }
-  &__list {
-    display: flex;
-  }
+
 
   &__item {
     background: var(--white-color);
@@ -22,7 +20,7 @@
     border-radius: 0px 0px 4px 4px;
   }
   &__item:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
   &__name {
       font-weight: 500;
@@ -60,7 +58,7 @@
 }
 &__icon-list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-left: 0;
     margin: 0;
 }
@@ -72,6 +70,9 @@
     width: 44px;
     height: 44px;
     fill: #afb1b8;
+    margin-right: 10px;
+}
+
 
     &__link:hover {
         align-items: center;
@@ -82,7 +83,7 @@
         transition: var(--anim);
     }
 }
-}
+
 .icon-cnt {
   margin-right: 10px;
   fill: #757575;

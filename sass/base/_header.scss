@@ -12,6 +12,7 @@
   border-bottom: 1px solid #ececec;
   &-list {
     display: flex;
+    position: relative;
   }
   &-container {
     display: flex;
@@ -51,7 +52,7 @@
 .link,
 .contacts-footer-item {
   font-style: normal;
-  font-weight: 500;
+  // font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -72,4 +73,38 @@
     background-color: var(--accent-color);
     width: 100%;
     height: 4px;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .menu-open {
+  display: none;
+}
+
+.menu-button.is-open .menu-open {
+  display: block;
+}
+
+.menu-button.is-open .menu-close {
+  display: none;
+}
+
+.menu-container {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: teal;
+  height: 20px;
+
+  &.is-open {
+    display: none;
+  }
 }

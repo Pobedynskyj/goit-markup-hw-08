@@ -1,33 +1,40 @@
 .logo {
   color: var(--accent-color);
-  font-size: 26px;
+  font-size: 24px;
+  line-height: 1.16;
   font-family: var(--secondary-font);
 }
 
 .logo-st {
+  display: inline-block;
   color: var(--nav-txt-cl);
-  font-size: 26px;
+  font-size: 24px;
+  line-height: 1.16;
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
 }
 
-.footer>.logo-st {
-    color: var(--white-color);
+.footer > .logo-st {
+  color: var(--white-color);
 }
 
 .studio {
-  font-size: 26px;
+  font-size: 24px;
 }
 
 .footer-studio {
   color: var(--white-color);
 }
 
-.link.logo-st {
-    margin-right: 93px;
-}
+// .link.logo-st {
+//     margin-right: 93px;
+// }
 
 .send-icon {
-    position: absolute;
-    box-sizing: border-box;
-    right: 24px;
-    top: 13px;
+  position: absolute;
+  box-sizing: border-box;
+  right: 24px;
+  top: 13px;
 }

@@ -1,7 +1,7 @@
 .hero {
     background-color: var(--hero-color);
     display: flex;
-    padding: 200px 0;
+    padding: 118px 0;
 
     max-width: 1600px;
     margin: auto;
@@ -9,14 +9,29 @@
             rgba(47, 48, 58, 0.4) 45%,
             rgba(47, 48, 58, 0.4) 0%),
         url(../images/\ hero-bg.jpg);
-&__name {
+
+    @media screen and (min-width: 480px) {
+        height: 400px;
+    }
+
+    &__name {
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.35;
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: var(--white-color);
+            font-size: 26px;
+            line-height: 1.61;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #FFFFFF;
         margin-bottom: 30px;
     }
+// &__name {
+//         font-weight: 900;
+//         font-size: 44px;
+//         line-height: 1.35;
+//         text-align: center;
+//         letter-spacing: 0.06em;
+//         text-transform: uppercase;
+//         color: var(--white-color);
+//         margin-bottom: 30px;
+//     }
 }
