@@ -625,6 +625,7 @@ ul {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: var(--white-color);
+  width: 100%;
   margin-bottom: 30px;
 }
 .portfolio__item:hover .portfolio__overlay {
@@ -1165,6 +1166,10 @@ img {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .header-container {
   display: -webkit-box;
@@ -1196,12 +1201,15 @@ img {
   color: #212121;
 }
 
-.header-link-logo {
-  margin: 15px 0;
+.header-list-item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 }
 
-.header-list-item:not(:last-child) {
-  margin-right: 50px;
+.header-link-logo {
+  margin: 15px 0;
 }
 
 .header-list-contact {
@@ -1211,6 +1219,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .header-contact-item,

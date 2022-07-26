@@ -13,7 +13,7 @@
   &__item {
     box-sizing: border-box;
     background-color: var(--white-color);
-    // margin: 15px;
+    width: 100%;
     margin-bottom: 30px;
   }
   &__item:hover &__overlay {
