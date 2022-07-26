@@ -10,6 +10,7 @@
 
 .header {
   border-bottom: 1px solid #ececec;
+  position: relative;
   &-list {
     display: flex;
     position: relative;
@@ -17,6 +18,7 @@
   &-container {
     display: flex;
     align-items: center;
+    position: relative;
   }
   &-link:hover,
   &-link:focus {
@@ -36,6 +38,9 @@
   }
 }
 
+.header-link-logo {
+  margin: 15px 0;
+}
 
 .header-list-item:not(:last-child) {
   margin-right: 50px;
@@ -73,38 +78,4 @@
     background-color: var(--accent-color);
     width: 100%;
     height: 4px;
-}
-
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
-.menu-button .menu-open {
-  display: none;
-}
-
-.menu-button.is-open .menu-open {
-  display: block;
-}
-
-.menu-button.is-open .menu-close {
-  display: none;
-}
-
-.menu-container {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: teal;
-  height: 20px;
-
-  &.is-open {
-    display: none;
-  }
 }

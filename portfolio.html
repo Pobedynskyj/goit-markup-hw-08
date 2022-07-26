@@ -33,6 +33,44 @@
           ><span class="logo">Web</span><span class="studio">Studio</span></a
         >
         <!-- header nav -->
+        <!-- <nav class="header-nav">
+          <ul class="header-list list">
+            <li class="header-list-item">
+              <a class="header-link link" href="./index.html">Студия</a>
+            </li>
+            <li class="header-list-item">
+              <a class="header-link link current current-link" href="#"
+                >Портфолио</a
+              >
+            </li>
+            <li class="header-list-item">
+              <a class="header-link link" href="#">Контакты</a>
+            </li>
+          </ul> -->
+          <button
+            type="button"
+            class="menu-button is-open"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg class="menu" width="40" height="40" aria-label="переключатель моб меню">
+              <use
+                class="menu-open"
+                href="./images/svg/symbol-defs.svg#icon-close-menu"
+              ></use>
+              <use
+                class="menu-close"
+                href="./images/svg/symbol-defs.svg#icon-burger"
+              ></use>
+            </svg>
+          </button>
+          <div
+            class="menu-container container is-open"
+            id="menu-container"
+            data-menu
+          >
+      <div class="navigation-mobile">
         <nav class="header-nav">
           <ul class="header-list list">
             <li class="header-list-item">
@@ -47,32 +85,9 @@
               <a class="header-link link" href="#">Контакты</a>
             </li>
           </ul>
-          <button
-            type="button"
-            class="menu-button is-open"
-            aria-expanded="false"
-            aria-controls="menu-container"
-            data-menu-button
-          >
-            <svg width="40" height="40" aria-label="переключатель моб меню">
-              <use
-                class="menu-open"
-                href="./images/svg/symbol-defs.svg#icon-burger"
-              ></use>
-              <use
-                class="menu-close"
-                href="./images/svg/symbol-defs.svg#icon-close-menu"
-              ></use>
-            </svg>
-          </button>
-          <div
-            class="menu-container container is-open"
-            id="menu-container"
-            data-menu
-          ></div>
-        </nav>
-        <!-- Contacts -->
-        <div class="contacts">
+            </div>
+            <div class="contacts-mobile">
+            <div class="contacts">
           <ul class="header-list-contact list">
             <li class="header-contact-item">
               <a class="link link-cnt" href="mailto:info@devstudio.com"
@@ -92,6 +107,30 @@
             </li>
           </ul>
         </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Contacts -->
+        <!-- <div class="contacts">
+          <ul class="header-list-contact list">
+            <li class="header-contact-item">
+              <a class="link link-cnt" href="mailto:info@devstudio.com"
+                ><svg class="icon-envelope icon-cnt" width="16" height="12">
+                  <use href="./images/svg/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                <span>info@devstudio.com</span></a
+              >
+            </li>
+            <li class="header-contact-item">
+              <a class="link link-cnt" href="tel:+380961111111"
+                ><svg class="icon-phone icon-cnt" width="10" height="16">
+                  <use href="./images/svg/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                <span>+38 096 111 11 11</span></a
+              >
+            </li>
+          </ul>
+        </div> -->
       </div>
     </header>
     <!-- Main -->
