@@ -21,6 +21,10 @@
     }
 }
 
+.link-f {
+    color: var(--often-color);
+}
+
 .link-cnt:hover svg {
     fill: var(--accent-color);
     transition: var(--anim);
@@ -42,6 +46,7 @@
 
 .contacts-footer-item:not(last-child) {
     margin-bottom: 9px;
+    
 }
 
 .header-contact-item:hover,
@@ -50,6 +55,11 @@
 .contacts-footer-item:focus {
     color: var(--accent-color);
     transition: var(--anim);
+}
+
+.contacts-footer {
+   margin-left: auto;
+   margin-right: auto;
 }
 
 

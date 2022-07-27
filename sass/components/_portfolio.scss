@@ -4,9 +4,8 @@
   }
   &__list {
     display: flex;
-    // box-sizing: border-box;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
     margin: 0;
   }
@@ -15,6 +14,10 @@
     background-color: var(--white-color);
     width: 100%;
     margin-bottom: 30px;
+
+      @media screen and (min-width: 768px) {
+          width: calc((100% - 30px) / 2);
+  }
   }
   &__item:hover &__overlay {
   transform: translateY(0);
@@ -76,6 +79,22 @@
 .link-card {
   width: 100%;
 }
+
+.link-grow {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+.grow {
+  @media screen and (min-width: 768px) {
+    flex-grow: 1;
+  }
+}
+
+
 
 
 

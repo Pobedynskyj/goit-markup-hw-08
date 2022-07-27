@@ -123,6 +123,10 @@ ul {
   transition: var(--anim);
 }
 
+.link-f {
+  color: var(--often-color);
+}
+
 .link-cnt:hover svg {
   fill: var(--accent-color);
   -webkit-transition: var(--anim);
@@ -152,6 +156,11 @@ ul {
   transition: var(--anim);
 }
 
+.contacts-footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .portfolio__buttons-list {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -159,6 +168,17 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__buttons-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 14px;
+  }
 }
 
 .portfolio__buttons-item {
@@ -354,6 +374,8 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 @media screen and (min-width: 480px) {
   .about__list {
@@ -364,11 +386,14 @@ ul {
   margin: -15px;
 }
 .about__items {
-  margin: 15px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 270;
+}
+@media screen and (min-width: 768px) {
+  .about__items {
+    width: calc((100% - 30px) / 2);
+  }
 }
 .about__svg {
   display: -webkit-box;
@@ -393,6 +418,12 @@ ul {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__items:nth-child(2n+1) {
+    margin-right: 30px;
   }
 }
 
@@ -468,7 +499,7 @@ ul {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.command__item:not(:last-child) {
+.command__item {
   margin-bottom: 30px;
 }
 .command__name {
@@ -550,6 +581,25 @@ ul {
   fill: #757575;
 }
 
+@media screen and (min-width: 768px) {
+  .command__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .command__item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+}
+
 .clients {
   padding: 60px 0;
 }
@@ -566,9 +616,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
@@ -595,6 +645,11 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
 .clients__item:hover {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -608,9 +663,6 @@ ul {
           align-items: center;
   -webkit-transition: var(--anim);
   transition: var(--anim);
-}
-.clients__item:nth-child(2n+1) {
-  margin-right: 30px;
 }
 .clients__icon:hover {
   fill: var(--accent-color);
@@ -641,11 +693,11 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   margin: 0;
 }
@@ -655,6 +707,11 @@ ul {
   background-color: var(--white-color);
   width: 100%;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    width: calc((100% - 30px) / 2);
+  }
 }
 .portfolio__item:hover .portfolio__overlay {
   -webkit-transform: translateY(0);
@@ -725,6 +782,27 @@ ul {
 
 .link-card {
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .link-grow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grow {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 
 .follow {
@@ -893,6 +971,11 @@ ul {
   }
 }
 @media screen and (max-width: 767px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
   .modal {
     width: 450px;
   }
