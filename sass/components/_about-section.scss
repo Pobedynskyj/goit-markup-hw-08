@@ -39,8 +39,8 @@
 
   }
   &__container-list {
-    // display: flex;
     margin: -15px;
+    
   }
   &__items {
     // width: calc(100% / 4 - 30px);
@@ -57,4 +57,12 @@
     margin-bottom: 30px;
     border-radius: 4px;
   }
+}
+
+.about__container-list {
+@media screen and(min-width: 768px) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 }
