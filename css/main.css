@@ -1023,7 +1023,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (width: 1200px) {
+@media screen and (min-width: 1200px) {
   .sub-list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
