@@ -213,37 +213,52 @@
           <ul class="doing__list list doing-container container-team">
             <li class="doing__items item">
               <div class="doing__image">
-                <img
-                  class="img"
-                  src="images/box1.jpg"
-                  alt="работа-1"
-                  width="370"
-                  height="294"
+                <picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="./images/descapp-lg_result.jpg 1x, ./images/descapp@2x-lg_result.jpg 2x"
+                type="image/jpg"
                 />
+                <img src="./images/descapp-lg_result.jpg" alt="desctop app" width="370" height="294">
+                </picture>
                 <p class="doing__desc">Десктопные приложения</p>
               </div>
             </li>
             <li class="doing__items item">
               <div class="doing__image">
-                <img
+                <picture>
+                  <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/mobapp-lg_result.jpg 1x, ./images/mobapp@2x-lg_result.jpg 2x"
+                  type="image/jpg"
+                  />
+                  <img
                   class="img"
-                  src="images/box2.jpg"
-                  alt="работа-2"
+                  src="images/mobapp-lg_result.jpg"
+                  alt="mobile app"
                   width="370"
                   height="294"
                 />
+                </picture>
                 <p class="doing__desc">Мобильные приложения</p>
               </div>
             </li>
             <li class="doing__items item">
               <div class="doing__image">
-                <img
+                <picture>
+                  <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/design-lg_result.jpg 1x, ./images/design@2x-lg_result.jpg 2x"
+                  type="image/jpg"
+                  />
+                  <img
                   class="img"
-                  src="images/box3.jpg"
-                  alt="работа-3"
+                  src="images/design-lg_result.jpg"
+                  alt="designer"
                   width="370"
                   height="294"
                 />
+                </picture>
                 <p class="doing__desc">Дизайнерские решения</p>
               </div>
             </li>
@@ -256,12 +271,26 @@
           <h2 class="command__title">Наша команда</h2>
           <ul class="list command__list">
             <li class="command__item">
-              <img
-                src="images/img3.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                  <source
+                  media="(min-width: 1200px)"
+                  srcset="images/igor-lg_result.jpg 1x, images/igor@2x-lg_result.jpg 2x"
+                  type="image/jpg"/>
+                  <source
+                  media="(min-width: 768px)"
+                  srcset="images/igor-md_result.jpg 1x, images/igor@2x-md_result.jpg 2x"
+                  type="image/jpg"/>
+                  <source
+                  media="(max-width: 767px)"
+                  srcset="images/igor-sm_result.jpg 1x, images/igor@2x-sm_result.jpg 2x"
+                  type="image/jpg"/>
+                  <img
+                  class="img"
+                  src="images/igor-sm_result.jpg"
+                  alt="Igor"
+                  width="270"
+                  height="260">
+                </picture>
               <div class="command__position">
                 <h3 class="command__name">Игорь Демьяненко</h3>
                 <p class="command__job" lang="en">Product Designer</p>
@@ -306,12 +335,26 @@
               </div>
             </li>
             <li class="command__item">
-              <img
-                src="images/img1.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                  <source
+                  media="(min-width: 1200px)"
+                  srcset="images/olga-lg_result.jpg 1x, images/olga@2x-lg_result.jpg 2x"
+                  type="image/jpg"/>
+                  <source
+                  media="(min-width: 768px)"
+                  srcset="images/olga-md_result.jpg 1x, images/olga@2x-md_result.jpg 2x"
+                  type="image/jpg"/>
+                  <source
+                  media="(max-width: 767px)"
+                  srcset="images/olga-sm_result.jpg 1x, images/olga@2x-sm_result.jpg 2x"
+                  type="image/jpg"/>
+                  <img
+                  class="img"
+                  src="images/olga-sm_result.jpg"
+                  alt="Olga"
+                  width="270"
+                  height="260">
+                </picture>
               <div class="command__position">
                 <h3 class="command__name">Ольга Репина</h3>
                 <p class="command__job" lang="en">Frontend Developer</p>
@@ -356,12 +399,26 @@
               </div>
             </li>
             <li class="command__item">
-              <img
-                src="images/img2.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                  <source
+                  media="(min-width: 1200px)"
+                  srcset="images/nikol-lg_result.jpg 1x, images/nikol@2x-lg_result.jpg 2x"
+                  type="image/jpg"/>
+                  <source
+                  media="(min-width: 768px)"
+                  srcset="images/nikol-md_result.jpg 1x, images/nikol@2x-md_result.jpg 2x"
+                  type="image/jpg"/>
+                  <source
+                  media="(max-width: 767px)"
+                  srcset="images/nikol-sm_result.jpg 1x, images/nikol@2x-sm_result.jpg 2x"
+                  type="image/jpg"/>
+                  <img
+                  class="img"
+                  src="images/nikol-sm_result.jpg"
+                  alt="Nikolay"
+                  width="270"
+                  height="260">
+                </picture>
               <div class="command__position">
                 <h3 class="command__name">Николай Тарасов</h3>
                 <p class="command__job" lang="en">Marketing</p>
@@ -406,12 +463,26 @@
               </div>
             </li>
             <li class="command__item">
-              <img
-                src="images/img4.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                  <source
+                  media="(min-width: 1200px)"
+                  srcset="images/miha-lg_result.jpg 1x, images/miha@2x-lg_result.jpg 2x"
+                  type="image/jpg"/>
+                  <source
+                  media="(min-width: 768px)"
+                  srcset="images/miha-md_result.jpg 1x, images/miha@2x-md_result.jpg 2x"
+                  type="image/jpg"/>
+                  <source
+                  media="(max-width: 767px)"
+                  srcset="images/miha-sm_result.jpg 1x, images/miha@2x-sm_result.jpg 2x"
+                  type="image/jpg"/>
+                  <img
+                  class="img"
+                  src="images/nikol-sm_result.jpg"
+                  alt="Mihail"
+                  width="270"
+                  height="260">
+                </picture>
               <div class="command__position">
                 <h3 class="command__name">Михаил Ермаков</h3>
                 <p class="command__job" lang="en">UI Designer</p>
