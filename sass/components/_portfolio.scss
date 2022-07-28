@@ -18,6 +18,10 @@
       @media screen and (min-width: 768px) {
           width: calc((100% - 30px) / 2);
   }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 60px) / 3);
+    }
   }
   &__item:hover &__overlay {
   transform: translateY(0);
@@ -58,6 +62,8 @@
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  @media screen and (min-width: 1200px) {
+  }
 }
 &__group-name {
   font-weight: 700;
@@ -90,7 +96,7 @@
 
 .grow {
   @media screen and (min-width: 768px) {
-    flex-grow: 1;
+    flex-grow: 2;
   }
 }
 

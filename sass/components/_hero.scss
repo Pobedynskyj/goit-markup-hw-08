@@ -10,28 +10,31 @@
             rgba(47, 48, 58, 0.4) 0%),
         url(../images/\ hero-bg.jpg);
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 1199px) {
         height: 400px;
+    }
+    @media screen and (min-width: 1200px) {
+        height: 600px;
     }
 
     &__name {
         font-weight: 900;
-            font-size: 26px;
-            line-height: 1.61;
-            text-align: center;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            color: #FFFFFF;
+        font-size: 26px;
+        line-height: 1.61;
+        text-align: center;
+        justify-content: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #FFFFFF;
         margin-bottom: 30px;
+
+        @media screen and (min-width: 1200px) {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        }
     }
-// &__name {
-//         font-weight: 900;
-//         font-size: 44px;
-//         line-height: 1.35;
-//         text-align: center;
-//         letter-spacing: 0.06em;
-//         text-transform: uppercase;
-//         color: var(--white-color);
-//         margin-bottom: 30px;
-//     }
+    &-container {
+        margin: auto;
+    }
 }

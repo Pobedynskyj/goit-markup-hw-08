@@ -4,14 +4,34 @@
   background-color: var(--hero-color);
   padding: 60px 0px;
   margin: auto;
+
+  
+
   &-left {
     // display: flex;
     display: block;
     justify-content: center;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      margin-left: 50px;
+      @media screen and (min-width: 1200px) {
+        margin-left: auto;
+        
+      }
+    }
   }
 
   &-right-side {
     margin-top: 60px;
+    @media screen and(min-width: 768px) {
+      margin-top: 0;
+      display: flex;
+      position: relative;
+      justify-content: flex-end;
+      margin-right: 89px;
+    }
   }
 
   // &-main-list {
@@ -21,5 +41,12 @@
   &-container {
     display: block;
     text-align: center;
+    
+  }
+
+  &-main-list {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
 }

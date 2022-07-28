@@ -50,9 +50,10 @@ fill: #2196F3;
 
   &.is-open {
     display: block;
-  }
-@media screen and (min-width: 768px) {
+
+  @media screen and (min-width: 768px) {
   display: none;
+}
 }
 }
 

@@ -33,12 +33,18 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #FFFFFF;
+        @media screen and(min-width: 1200px) {
+           text-align: start;
+        }
 
 }
 
 .sub-item {
     width: 100%;
     margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    }
 }
 
 
@@ -54,10 +60,21 @@
     padding-left: 16px;
     padding-bottom: 15px;
     padding-top: 15px;
+    @media screen and(min-width: 768px) {
+        max-width: 450px;
+        margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
+    }
 }
 
 .sub-list {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (width: 1200px) {
+        flex-direction: row;
+        align-items: unset;
+    }
 }
